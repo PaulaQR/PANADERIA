@@ -5,13 +5,16 @@
 				<meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Panaderia Colombiana</title>
+				<link rel="stylesheet" href="/css/normalize.css">
+				<link rel="stylesheet" href="/css/app.css">
 				
   </head>
 
     <header>
-      <h1>Panaderia Colombiana</h1>
+      <h1 class="nombre-sitio">Panaderia <span>Colombiana</span></h1>
     </header>
-    <nav>
+
+    <nav class="navegacion">
       <a href="index.html">Inicio</a>
       <a href="nosotros.html">Nosotros</a>
       <a href="tienda.html">Tienda</a>
@@ -20,8 +23,8 @@
       <a href="contacto.html">Contacto</a>
     </nav>
 
-				
-					<h2>Nuestros Productos</h2>
+				<section>
+					<h2>Categorías de<span>Productos</span></h2>
 
 					<div>
 						<img src="img/Pan7.jpg" alt="Imagen Pan" />
@@ -42,8 +45,8 @@
 						<img src="/img/Galleta.jpg"/>
 						<a href="#">Galletas</a>
 					</div>
-
-					<section>
+				</section>
+					<section class="sobre-nosotros">
 						<div>
 							<h2>Sobre Nosotros</h2>
 							<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
@@ -145,7 +148,7 @@
 				<footer>
 					<div>
 					<h3>Categorias</h3>
-					<nav>
+					<nav id="navegacion">
 						 <a href="#">Panes</a>
 							<a href="#">Hojaldres</a>
 							<a href="#">Tradicionales</a>
@@ -156,7 +159,7 @@
 					</div>
 					<div>
 						<h3>Sobre Nosotros</h3>
-						<nav>
+						<nav class="navegacion">
 						 <a href="#">Nuestra historia</a>
 							<a href="#">Misión, visión y Valores</a>
 							<a href="#">Carreras</a>

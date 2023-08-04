@@ -1,0 +1,29 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+.nombre-sitio	{
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+h1 {
+  font-size: 40px;
+  color: #795548;
+}
+
+.nombre-sitio span {
+  color: #c48426;
+}
+
+/** Box Model	**/
+
+.sobre-nosotros {
+  background-color: #f7f7f7;
+  width: 200px;
+		padding: ;
+}
