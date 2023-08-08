@@ -6,132 +6,146 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Panaderia Colombiana</title>
 				<link rel="stylesheet" href="/css/normalize.css">
+				<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 				<link rel="stylesheet" href="/css/app.css">
 				
   </head>
-
+<body>
     <header>
       <h1 class="nombre-sitio">Panaderia <span>Colombiana</span></h1>
     </header>
-
-    <nav class="navegacion">
+				<div class="contenedor-navegacion">
+					<nav class="nav-principal contenedor">
       <a href="index.html">Inicio</a>
       <a href="nosotros.html">Nosotros</a>
       <a href="tienda.html">Tienda</a>
-      <a href="blog.html"></a>
+ 					<a href="blog.html">Blog</a>
       <a href="galeria.html">Galeria</a>
       <a href="contacto.html">Contacto</a>
     </nav>
+				</div>
 
-				<section>
-					<h2>Categorías de<span>Productos</span></h2>
 
-					<div>
-						<img src="img/Pan7.jpg" alt="Imagen Pan" />
+
+				<div class="hero"></div>
+
+				<section class="contenedor categorias">
+					<h2 class="text-center">Categorías de <span>Productos</span></h2>
+
+					<div class="listado-categorias">
+
+					<div class="categoria">
+						<img src="img/Pan2.jpg" alt="Imagen Pan" />
 						<a href="#">Panes</a>
 					</div>
 
-					<div>
+					<div class="categoria">
 						<img src="/img/Hojaldre.jpg" alt="Imagen Hojaldre" />
 						<a href="#">Hojaldres</a>
 					</div>
 
-					<div>
-						<img src="/img/Arepas.png" alt="Arepa huevo" />
+					<div class="categoria">
+						<img src="/img/Almojabanas-2.jpg" alt="Arepa huevo" />
 						<a href="#">Tradicionales</a>
 					</div>
 
-					<div>
+					<div class="categoria">
 						<img src="/img/Galleta.jpg"/>
 						<a href="#">Galletas</a>
 					</div>
+				</div>
 				</section>
+				
 					<section class="sobre-nosotros">
-						<div>
+						<div class="contenedor sobre-nosotros-grid">
+							<div class="texto-nosotros">
 							<h2>Sobre Nosotros</h2>
 							<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
 								Perferendis enim sunt facilis laborum deserunt accusantium vitae ab quisquam modi,
 								 expedita est ullam vel veritatis, odit dolores labore inventore iure beatae.</p>
+								</div> <!-- texto-nosotros -->
 						</div>
 					</section>
 
 				
 			</section>
 
-    <main>
-      <h2>Nuestros panes</h2>
+    <main class="contenido-principal contenedor">
+      <h2 class="text-center">Nuestros <span>Panes</span></h2>
 
-						<div>
-							 <div>
+						<div class="listado-productos">
+							 <div class="producto">
 										<img src="/img/Pan.jpg" alt="Panes">
-										<div>
-											<h3>Pan de nuestra casa</h3>
+										<div class="texto-producto">
+											<h3>Pan Madre</h3>
 											<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
 												 Consequuntur, doloribus maxime necessitatibus praesentium commodi quo ut quia 
 												velit repudiandae expedita magnam rem ab explicabo, odio modi hic corporis ad? Corrupti!</p>
-												<p>8.000COP</p>
-												<a href="#">Agregar al carrito</a>
+												<p class="precio">8.000COP</p>
+												<a class="btn" href="#">Agregar al carrito</a>
 										</div><!-- Info Producto -->
 								</div><!-- Producto -->
 								
-								<!-- realizar 4 divs que incluyan lo anterior -->
-								<div>
+						
+								<div class="producto">
 									<img src="/img/Pan2.jpg" alt="Panes">
-									<div>
-										<h3>Pan de nuestra casa</h3>
+									<div class="texto-producto">
+										<h3>Pan Madre Integral</h3>
 										<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
 												Consequuntur, doloribus maxime necessitatibus praesentium commodi quo ut quia 
 											velit repudiandae expedita magnam rem ab explicabo, odio modi hic corporis ad? Corrupti!</p>
-											<p>8.500COP</p>
-											<a href="#">Agregar al carrito</a>
+											<p class="precio">8.500COP</p>
+											<a class="btn" href="#">Agregar al carrito</a>
 									</div><!-- Info Producto -->
 
 								</div><!-- Producto -->
 
-								<div>
+								<div class="producto">
 									<img src="/img/Pan3.jpg" alt="Panes">
-									<div>
-										<h3>Pan de nuestra casa</h3>
+									<div class="texto-producto">
+										<h3>Pan de Semillas</h3>
 										<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
 												Consequuntur, doloribus maxime necessitatibus praesentium commodi quo ut quia 
 											velit repudiandae expedita magnam rem ab explicabo, odio modi hic corporis ad? Corrupti!</p>
-											<p>9.000COP</p>
-											<a href="#">Agregar al carrito</a>
+											<p class="precio">9.000COP</p>
+											<a  class="btn" href="#">Agregar al carrito</a>
 									</div><!-- Info Producto -->
 									       
-								<div>
+								<div class="producto">
 									<img src="/img/Pan4.jpg" alt="Panes">
-									<div>
+									<div class="texto-producto">
 										<h3>Pan de nuestra casa</h3>
 										<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
 												Consequuntur, doloribus maxime necessitatibus praesentium commodi quo ut quia 
 											velit repudiandae expedita magnam rem ab explicabo, odio modi hic corporis ad? Corrupti!</p>
-											<p>9.500COP</p>
-											<a href="#">Agregar al carrito</a>
+											<p class="precio">9.500COP</p>
+											<a class="btn" href="#">Agregar al carrito</a>
 									</div><!-- Info Producto -->
 							</div><!-- Producto -->
 
-							<div>
+							<div class="producto">
 								<img src="/img/Pan5.jpg" alt="Panes">
-								<div>
+								<div class="texto-producto">
 									<h3>Pan de nuestra casa</h3>
 									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
 											Consequuntur, doloribus maxime necessitatibus praesentium commodi quo ut quia 
 										velit repudiandae expedita magnam rem ab explicabo, odio modi hic corporis ad? Corrupti!</p>
-										<p>10.000COP</p>
-										<a href="#">Agregar al carrito</a>
+										<p class="precio">10.000COP</p>
+										<a class="btn" href="#">Agregar al carrito</a>
 								</div><!-- Info Producto -->
 						</div><!-- Producto -->
 
-						<div>
+						<div class="producto">
 							<img src="/img/Pan6.jpg" alt="Panes">
-							<div>
-								<h3>Pan de nuestra casa</h3>
+							<div class="texto-producto">
+								<h3>Baguette</h3>
 								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
 										Consequuntur, doloribus maxime necessitatibus praesentium commodi quo ut quia 
 									velit repudiandae expedita magnam rem ab explicabo, odio modi hic corporis ad? Corrupti!</p>
-									<p>9.000COP</p>
-									<a href="#">Agregar al carrito</a>
+									<p class="precio">9.000COP</p>
+									<a  class="btn" href="#">Agregar al carrito</a>
 							</div><!-- Info Producto -->
 					</div><!-- Producto -->
 
@@ -139,16 +153,11 @@
     </main>
  
 
-    <a href="nosotros.html"
-      >Sobre Nosotros
-
-      <img src="/img/Pan2.jpg" alt="Imagen Pan2" />
-    </a>
-
-				<footer>
+				<footer class="site-footer">
+					<div class="grid-footer contenedor">
 					<div>
 					<h3>Categorias</h3>
-					<nav id="navegacion">
+					<nav class="footer-menu">
 						 <a href="#">Panes</a>
 							<a href="#">Hojaldres</a>
 							<a href="#">Tradicionales</a>
@@ -159,7 +168,7 @@
 					</div>
 					<div>
 						<h3>Sobre Nosotros</h3>
-						<nav class="navegacion">
+						<nav class="footer-menu">
 						 <a href="#">Nuestra historia</a>
 							<a href="#">Misión, visión y Valores</a>
 							<a href="#">Carreras</a>
@@ -170,13 +179,14 @@
 						</div>
 						<div>
 							<h3>Soporte</h3>
-							<nav>
+							<nav class="footer-menu">
 								<a href="#">Preguntas Frecuentes</a>
 								<a href="#">Ayda </a>
 								<a href="#">Confianza & Seguridad</a>
 						</nav>
 							</div>
-					<p>Todos los derechos reservados - Paula Quintero</p>
+						</div>
+					<p class="copyright"> Todos los derechos reservados - Paula Quintero</p>
 				</footer>
   </body>
 </html>
