@@ -49,6 +49,7 @@ a {
   font-weight: 900;
   padding: 1rem;
   transition: background-color .3s ease-out;
+  text-align: center;
 }
 
 .btn:hover {
@@ -68,9 +69,18 @@ img {
 
 }
 
+.mas
+
+
 .text-center span {
   color: #c48426;   
 }
+
+.max-width-30 {
+  max-width: 30rem;
+}
+
+
 
 /* Header y Navegación */
 .nombre-sitio {
@@ -331,3 +341,24 @@ object-fit: cover;
  color: #e09f74;
 }
 
+.contenido-entrada-blog {
+  width: 60rem;
+  margin: 0 auto;
+}
+
+/* galeria */
+
+.galeria {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+
+}
+.galeria img {
+  height: 40rem;
+  width: 40rem;
+  object-fit: cover;
+}
