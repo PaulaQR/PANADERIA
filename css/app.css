@@ -69,9 +69,6 @@ img {
 
 }
 
-.mas
-
-
 .text-center span {
   color: #c48426;   
 }
@@ -240,10 +237,19 @@ h1 {
 
 }
 
+.producto-extra {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+
+}
+
+
+
 .texto-producto {
+  text-align: center;
   color: #fff;
   padding: 2rem;
-  text-align: center;
 }
 .texto-producto h3 {
   margin: 0;

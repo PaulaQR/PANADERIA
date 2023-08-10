@@ -49,16 +49,68 @@
 							<label for="asunto">Asunto</label>
 							<input type="text" id="asunto" placeholder="Tu Asunto"> 
 						</div>
+
+						<div class="campo" >
+							<label for="telefono">E-mail</label>
+							<input type="email" id="email" placeholder="email"> 
+						</div>
+
+						<div class="campo" >
+							<label for="telefono">Telefono</label>
+							<input type="tel" id="telefono" placeholder="Telefono"> 
+						</div>	
+										
+						<div class="campo" >
+							<label for="mensaje">Mensaje</label>
+							<textarea rows="10" cols="20"></textarea>
 						
 						</fieldset>
 
 						<fieldset>
 													<legend>País</legend>
+							<div class="campo">
+								<label for="pais">País</label>
+								<select id="pais">
+									<option value="" disabled> Seleccione </option>
+									<option value="AR"> Argentina </option>
+									<option value="CL"> Chile </option>
+									<option value="CO"> Colombia </option>
+									<option value="ES"> España </option>
+									<option value="PR"> Perú </option>
+								</select>
+							</div>
+
 						</fieldset>
 
 						<fieldset>
 							      <legend>Información Extra</legend>
+
+													<div class="campo" >
+														<label for="cliente">Cliente</label>
+														<input type="radio" id="cliente" name="tipo" value="cliente"> 
+													</div>
+
+													<div class="campo" >
+														<label for="proveedor">Proveedor</label>
+														<input type="radio" id="proveedor" name="tipo" value="proveedor"> 
+													</div>
+
+													<div class="campo" >
+														<label for="categoria">categoría de Interés</label>
+													<input list="categorias" name="categorias">
+													<datalist id="categorias">
+														<option value="Panes">
+														<option value="Hojaldres">
+														<option value="Tradicionales">
+														<option value="Quesos">
+														<option value="Galletas">
+														<option value="Tortas">
+													</datalist>
+													</div>
+
+
 						</fieldset>
+				<input type="submit" value="Enviar Formulario">
 
 						</form>
     </main>
