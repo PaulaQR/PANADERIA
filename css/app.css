@@ -101,6 +101,11 @@ img {
 .nombre-sitio {
   margin-top: 5rem;
   text-align: center;
+  
+}
+
+.sitio-color {
+  color:#795548;
 }
 
 h1 {
@@ -387,19 +392,16 @@ object-fit: cover;
 
 /* galeria */
 
-.galeria {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-
+.galeria li {
+  margin-bottom: 1rem;
 }
-.galeria img {
-  height: 40rem;
-  width: 40rem;
-  object-fit: cover;
+
+.galeria li:last-of-type {
+  margin-bottom: 0;
+}
+
+.galeria li:not(:last-of-type) {
+  margin-bottom: 1rem;
 }
 
 /* Formulario */
