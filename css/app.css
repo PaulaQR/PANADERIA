@@ -22,16 +22,32 @@ h3 {
   margin: 0 0 5rem 0;
 }
 h1 {
-  font-size: 5 rem;
+  font-size:  3.8rem;
+}
+@media (min-width: 768px) { 
+  h1 {
+    font-size: 5 rem;
+  }
 }
 
 h2 {
-  font-size: 4 rem;
+  font-size: 3.2rem;
+}
+@media (min-width: 768px) { 
+  h2 {
+    font-size: 4 rem;
+  }
 }
 
 h3 {
-  font-size: 3 rem;
+  font-size: 2.4rem;
 }
+@media (min-width: 768px) { 
+  h3 {
+    font-size: 3rem;
+  }
+}
+  
 
 a {
   text-decoration: none;
@@ -51,11 +67,16 @@ a {
   padding: 1rem;
   transition: background-color .3s ease-out;
   text-align: center;
+<<<<<<< HEAD
   border-radius: 2rem;
+=======
+  border: none       ;
+>>>>>>> refs/remotes/origin/master
 }
 
 .btn:hover {
     background-color: #dea450;
+    cursor: pointer;
 }
 
 img {
@@ -85,6 +106,11 @@ img {
 .nombre-sitio {
   margin-top: 5rem;
   text-align: center;
+  
+}
+
+.sitio-color {
+  color:#795548;
 }
 
 h1 {
@@ -100,18 +126,33 @@ h1 {
 }
 
 .nav-principal {
-  padding: 20px 0;
+  padding: 2rem 0;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 768px) { 
+  .nav-principal {
+    justify-content: space-between;
+    flex-direction: row;
+  }
 }
 
 .hero {
-  background-image: url(../img/hero.avif);
+  background-image: url(../img/Hero.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  height: 55rem;
+  height: 25rem;
 }
+
+@media (min-width: 768px) { 
+  .hero {
+    height: 55rem;
+  }
+}
+  
+
 /* Categorias */
 .categorias {
   color: #795548;
@@ -361,17 +402,52 @@ object-fit: cover;
 
 /* galeria */
 
-.galeria {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-
+.galeria li {
+  margin-bottom: 1rem;
 }
-.galeria img {
-  height: 40rem;
-  width: 40rem;
-  object-fit: cover;
+
+.galeria li:last-of-type {
+  margin-bottom: 0;
+}
+
+.galeria li:not(:last-of-type) {
+  margin-bottom: 1rem;
+}
+
+/* Formulario */
+
+.formulario {
+  max-width: 60rem;
+  margin: 0 auto;
+}
+.formulario fieldset {
+  border: 2px solid #c48426;
+  margin-bottom: 2rem;
+}
+
+.formulario legend {
+  background-color: #a8491d;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 900;
+  padding:1rem;
+  margin-bottom: 4rem;
+}
+
+.campo {
+ display: flex;
+ margin-bottom: 2rem;
+}
+.campo label {
+ flex-basis: 10rem;
+}
+
+.campo input:not([type="radio"]),
+.campo textarea,
+.campo select {
+  flex: 1;
+  border: 1px solid #a8491d32;
+  padding: 1rem;
 }
