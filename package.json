@@ -1,0 +1,29 @@
+{
+  "dependencies": {
+    "npm": "^9.8.1",
+    "sass": "^1.66.1"
+  },
+  "name": "panaderia",
+  "description": "PANADERIA - DESARROLLO WEB - CODERHOUSE",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {
+    "node-sass": "^9.0.0",
+    "nodemon": "^3.0.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss ./scss/style.scss ./css/style.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PaulaQR/PANADERIA.git"
+  },
+  "author": "Maria Paula Quintero",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PaulaQR/PANADERIA/issues"
+  },
+  "homepage": "https://github.com/PaulaQR/PANADERIA#readme"
+}
