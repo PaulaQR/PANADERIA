@@ -128,7 +128,6 @@ h1 {
   .nav-principal {
     justify-content: space-between;
     flex-direction: row;
-    margin: 4rem;
   }
 }
 
