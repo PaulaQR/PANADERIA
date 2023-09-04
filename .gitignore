@@ -1,0 +1,3 @@
+/node_modules
+# ignorar archivo style-original.css
+/src/assets/css/style-original.css
