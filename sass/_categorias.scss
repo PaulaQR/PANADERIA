@@ -1,0 +1,46 @@
+
+/* Categorias */
+.categorias {
+	padding: 5rem 0;
+	color: #795548;
+}
+
+.categoria {
+margin-bottom: 2rem;
+text-align: center;
+}
+
+@media (min-width: 768px) { 
+	.categoria {
+			margin-bottom: 0;
+	}
+}
+
+.categoria img {
+	width: 100%;
+}
+
+
+.categorias span{
+	color: #c48426;
+}
+
+.categoria a {
+	text-align: center;
+	display: block;
+	padding: 2rem;
+	font-size: 2rem;
+}
+.categoria a:hover {
+	background-color: #c48426;
+	color: #fff;
+	border-bottom-right-radius: 1rem;
+}
+
+@media (min-width: 768px) { 
+	.listado-categorias {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 5rem;
+	}
+}
