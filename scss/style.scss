@@ -1,21 +1,24 @@
+$base-color:#795548;
+$secondary-color:#c48426;
+$white-color:#fff;
+$global: 62.5%;
+$global-border: boder-box;
+$fuente: "Montserrat", sans-serif;
+$fuente-titulo: "Playfair Display", serif;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@400;700&display=swap");
 /* Globales */
-
 html {
-	box-sizing: border-box;
-	font-size: 62.5%; /* Un rem = 10px */
-
+	box-sizing: $global-border;
+ font-size: $global;
 	body {
-		font-family: "Montserrat", sans-serif;
+		font-family: $fuente;
 		font-size: 1.6rem; /* 16px */
 		line-height: 2;
 
-		h1,
-		h2,
-		h3 {
-			font-family: "Playfair Display", serif;
+		h1,h2,h3 {
+			font-family: $fuente-titulo;
 			margin: 0 0 2rem 0;
 		}
-
 		h1 {
 			font-size:  3.8rem;
 		}
@@ -26,23 +29,14 @@ html {
 			font-size: 2.4rem;
 		}
 
-		a {
-			text-decoration: none;
-			color: #795548;
-	}
-
-
-
 		.contenedor {
 			max-width: 120rem;
 			margin: 0 auto;
 	}
-	
-	
 	.btn {
-			background-color: #cb7c2d ;
+			background-color: $secondary-color;
 			display: block;
-			color: #fff;
+			color:	$white-color;
 			text-transform: uppercase;
 			font-weight: 900;
 			font-size: 1.8rem;
@@ -50,18 +44,14 @@ html {
 			transition: background-color .3s ease-out;
 			text-align: center;
 			border-radius: 2rem;
-			width:100%; 
 			border: none;
 	}
-
 	.max-width-30{
 		width: 90%;
-		margin: 0 auto;
-
 	}
 	
 	.btn:hover {
-					background-color: #dea450;
+					background-color: $secondary-color;
 					cursor: pointer;
 	}
 	
@@ -74,13 +64,13 @@ html {
 	/* Utilidades*/
 	.text-center{
 			text-align: center;
-			color: #795548;
+			color: $base-color;
 	}
 	
 	.text-center span {
-			color: #c48426;   
+			color: $secondary-color;   
 	}
-		// media queries globales
+		/*media queries globales*/
 		@media (min-width: 768px) {
 			/* Globales */
 			h1 {
@@ -102,36 +92,31 @@ html {
 	}
 }
 
-// Header y navegacion
+/*Header y navegacion*/
 
 .nombre-sitio {
 	margin-top: 5rem;
 	text-align: center;
-	
-}
-
-.sitio-color {
-	color:#795548;
-}
-
+	.sitio-color {
+		color:$base-color;
+	}
 h1 {
 	font-size: 40px;
-	color: #795548;
+	color:$base-color;
 }
-
 .nombre-sitio span {
-	color: #c48426;
+	color: $secondary-color;
+}
 }
 .contenedor-navegacion {
-	border-top: 0.1rem solid #c48426;
-}
+	border-top: 0.1rem solid $secondary-color;
 
-.nav-principal {
-	padding: 2rem 0;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
+	.nav-principal {
+		padding: 2rem 0;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
 .hero {
 	background-image: url(../img/Hero.jpg);
 	background-repeat: no-repeat;
@@ -139,9 +124,7 @@ h1 {
 	background-position: center center;
 	height: 25rem;
 }
-
-// media queries Header	y navegacion
-
+/*media queries Header	y navegacion*/
 @media (min-width: 768px) { 
 	.nav-principal {
 			justify-content: space-between;
@@ -151,24 +134,22 @@ h1 {
 		height: 55rem;
 }
 }
+}
 
 /* Categorias */
 .categorias {
 	padding: 5rem 0;
-	color: #795548;
+	color:$base-color;
+	.categorias span{
+		color:$secondary-color;
+	}	
 }
 
 .categoria {
 margin-bottom: 2rem;
-}
 
 .categoria img {
 	width: 100%;
-}
-
-
-.categorias span{
-	color: #c48426;
 }
 
 .categoria a {
@@ -177,14 +158,17 @@ margin-bottom: 2rem;
 	padding: 2rem;
 	font-size: 2rem;
 }
+}
+
+
 .categoria a:hover {
-	background-color: #c48426;
+	background-color:	$secondary-color;
 	color: #fff;
 	border-bottom-right-radius: 1rem;
 }
 
 
-// Categorias Media Queries	
+/*Categorias Media Queries*/	
 
 @media (min-width: 768px) { 
 	.categoria {
@@ -225,7 +209,7 @@ margin-bottom: 2rem;
 
 }
 
-// Media Queries Sobre Nosotros
+/*Media Queries Sobre Nosotros*/
 
 @media (min-width: 768px) { 
 	.sobre-nosotros {
@@ -261,8 +245,6 @@ margin-bottom: 2rem;
 .producto {
 	background-color: #795548;
 	margin-bottom: 2rem;
-}
-
 
 @media (min-width: 768px) { 
 	.listado-productos {
@@ -275,6 +257,8 @@ margin-bottom: 2rem;
 			display: flex;
 			flex-direction: column;
 			margin-top: 1rem;
+			background-color: $base-color;
+			margin-bottom: 2rem;
 	}
 
 	.producto:nth-child(1){
@@ -303,16 +287,10 @@ margin-bottom: 2rem;
 			width: 100%;
 			object-fit: cover;
 	} 
-	
-	
-	
 	.producto:nth-child(3){
 			grid-column-start: 4;
 			grid-column-end: 7;
-			
 	}
-	
-	
 	
 	.producto:nth-child(4){
 			grid-column-start: 1;
@@ -347,12 +325,6 @@ margin-bottom: 2rem;
 	.descripcion {
 			flex-grow: 1;
 	}
-	
-}
-
-.producto {
-	background-color: #795548;
-	margin-bottom: 2rem;
 }
 
 @media (min-width: 768px) { 
@@ -360,63 +332,46 @@ margin-bottom: 2rem;
   margin-bottom: 1rem;
  }
 }
-
-
+}
 
 .texto-producto {
   text-align: center;
   color: #fff;
-  padding: 2rem;
-}
-
-
-.texto-producto h3 {
-  margin: 0; 
-  
-}
-
-.texto-producto p {
+  padding: 1rem;
+		.texto-producto h3 {
+			margin: 0; 
+	}
+	.texto-producto p {
   margin: 0 0 .5rem 0;
+		font-size: 1.6rem;
 }
-
 .texto-producto .precio {
-  font-size: 2.8rem;
-  font-weight: 900;
+	font-size: 2rem;
+	font-weight: 900;
 }
-
+}
 /* Footer */
-
 .site-footer {
-	border-top: 1px solid #c48426;
+	border-top: 1px solid $secondary-color;
 	margin-top: 5rem;
 	padding: 5rem;
-}
-
-
-
-.site-footer h3 {
-	margin-bottom: .5rem;
-	text-align: center;
-}
-
-.grid-footer > div {
-	margin-bottom: 2rem;
-	color: #c48426;
-}
-
-.footer-menu a {
-	display: block;
-	text-align: center;
-	
-}
-
+	.site-footer h3 {
+		margin-bottom: .5rem;
+		text-align: center;
+	}
+	.grid-footer > div {
+		margin-bottom: 2rem;
+		color: $secondary-color;
+	}
+	.footer-menu a {
+		display: block;
+		text-align: center;
+	}
 .copyright {
 	margin-top: 5rem;
 	text-align: center;
 	color: #c48426;
-
 }
-
 @media (min-width: 768px) { 
 	.site-footer h3 {
 			text-align: left;
@@ -433,7 +388,7 @@ margin-bottom: 2rem;
 	text-align: left;
 }
 }
-
+}
 
 /* Nosotros */
 
@@ -466,25 +421,24 @@ object-fit: cover;
 /* Blog */
 
 .entrada {
-	border-bottom: 2px solid #c48426;
+	border-bottom: 2px solid $secondary-color;
 	margin-bottom: 2rem;
 	padding-bottom: 4rem;
 
 	.entrada h2 {
-		color: #795548;
+		color:	$base-color;
 	}
 	.entrada-meta p {
 		font-weight: bold;
 	}
 	
 	.entrada-meta span {
-	color: #e09f74;
+	color: $secondary-color;
 	}
-
-}
+	}
 .masas {
 	margin: 2rem;
-	color: #795548;
+	color: $base-color;
 }
 
 .contenido-entrada-blog {
@@ -495,7 +449,7 @@ object-fit: cover;
 @media (max-width: 767px) { 
 	.entrada h2 {
 			text-align: center;
-			color: #795548;
+			color: $base-color;
 }
 .contenido-blog {
 	padding: 2rem;
@@ -517,7 +471,7 @@ object-fit: cover;
 						column-gap: 4rem;
 				}
 				.entrada h2 {
-					color: #795548;
+					color: $base-color;
 				}
 			}
 
@@ -542,7 +496,7 @@ object-fit: cover;
 	margin: 0 auto;
 }
 .formulario fieldset {
-	border: 2px solid #c48426;
+	border: 2px solid $secondary-color;
 	margin-bottom: 2rem;
 }
 

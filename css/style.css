@@ -51,7 +51,6 @@ html body .btn {
 }
 html body .max-width-30 {
   width: 90%;
-  margin: 0 auto;
 }
 html body .btn:hover {
   background-color: #dea450;
@@ -71,9 +70,6 @@ html body .text-center span {
   color: #c48426;
 }
 @media (min-width: 768px) {
-  html body {
-    /* Globales */
-  }
   html body h1 {
     font-size: 5rem;
   }
@@ -82,10 +78,6 @@ html body .text-center span {
   }
   html body h3 {
     font-size: 3rem;
-  }
-  html body .max-width-30 {
-    width: 100%;
-    margin: 0 auto;
   }
 }
 
@@ -501,15 +493,23 @@ h1 {
   font-weight: 900;
   padding: 1rem;
   margin-bottom: 4rem;
+  border-radius: 100%;
 }
 
 .campo {
   display: flex;
   margin-bottom: 2rem;
+
 }
+.campo ::placeholder{
+ font-size: 1.8rem;
+ color: #a8491d5d;
+}
+
 
 .campo label {
   flex-basis: 10rem;
+
 }
 
 .campo input:not([type="radio"]),
