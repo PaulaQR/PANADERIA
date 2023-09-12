@@ -1,125 +1,117 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panadería Colombiana</title>
     <link rel="stylesheet" href="/css/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-    <title>Galeria - Panaderia Colombiana</title>
 </head>
 <body>
-    <header class="py-4">
-        <h1 class="text-center">
-            Panaderia <span>Colombiana</span>
-        </h1>
+    <header>
+        <h1 class="nombre-sitio">Panadería <span>Colombiana</span></h1>
+        <nav>
+        <ul class="nav-principal contenedor">
+          <li><a href="index.html">Inicio</a></li> 
+          <li><a href="nosotros.html">Nosotros</a></li> 
+          <li><a href="tienda.html">Tienda</a></li>
+          <li> <a href="blog.html">Blog</a></li>
+          <li> <a href="galeria.html">Galería</a></li>
+          <li> <a href="contacto.html">Contacto</a></li> 
+        </ul>
+        </nav>
     </header>
-    <div class="border-top py-4">
-        <div class="navbar navbar-expand-lg container navbar-light">
-            <a class="navbar-brand sitio-color d-lg-none fs-2 fw-bold text-uppercase" href="index.html">
-                Panaderia Colombiana
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navegacion">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div id="navegacion" class="collapse navbar-collapse">
-                <nav class="navbar-nav container d-flex flex-md-row justify-content-md-between text-center">
-                    <a href="index.html">Inicio</a>
-                    <a href="nosotros.html">Nosotros</a>
-                    <a href="tienda.html">Tienda</a>
-                    <a href="blog.html">Blog</a>
-                    <a href="galeria.html">Galeria</a>
-                    <a href="contacto.html">Contacto</a>
+
+    <main class="contenido-principal contenedor">
+        <h2 class="text-center">Galería Puro Sabor</h2>
+
+        <ul class="galeria">
+            <li>
+                <a href="IMG/galeria_01.jpg">
+                    <img src="IMG/galeria_01.jpg" alt="Imagen Galería">
+                </a>
+            </li>
+            <li>
+                <a href="IMG/galeria_02.jpg">
+                    <img src="IMG/galeria_02.jpg" alt="Imagen Galería">
+                </a>
+            </li>
+            <li>
+                <a href="IMG/galeria_03.jpg">
+                    <img src="IMG/galeria_03.jpg" alt="Imagen Galería">
+                </a>
+            </li>
+            <li>
+                <a href="IMG/galeria_04.jpg">
+                    <img src="IMG/galeria_04.jpg" alt="Imagen Galería">
+                </a>
+            </li>
+            <li>
+                <a href="IMG/galeria_05.jpg">
+                    <img src="IMG/galeria_05.jpg" alt="Imagen Galería">
+                </a>
+            </li>
+            <li>
+                <a href="IMG/Galeria_06.jpg">
+                    <img src="IMG/Galeria_06.jpg" alt="Imagen Galería">
+                </a>
+            </li>
+            <li>
+                <a href="IMG/galeria_07.jpg">
+                    <img src="IMG/galeria_07.jpg" alt="Imagen Galería">
+                </a>
+            </li>
+            <li>
+                <a href="IMG/galeria_08.jpg">
+                    <img src="IMG/galeria_08.jpg" alt="Imagen Galería">
+                </a>
+            </li>
+            <li>
+                <a href="IMG/galeria_09.jpg">
+                    <img src="IMG/galeria_09.jpg" alt="Imagen Galería">
+                </a>
+            </li>
+        </ul>
+       
+    </main>
+
+    <footer class="site-footer">
+        <div class="grid-footer contenedor">
+            <div>
+                <h3>Categorías</h3>
+                <nav class="footer-menu">
+                    <a href="#">Panes</a>
+                    <a href="#">Hojaldres</a>
+                    <a href="#">Tradicionales</a>
+                    <a href="#">Quesos</a>
+                    <a href="#">Galletas</a>
+                    <a href="#">Tortas</a>
+                </nav>
+            </div>
+            <div>
+                <h3>Sobre Nosotros</h3>
+                <nav class="footer-menu">
+                    <a href="#">Nuestra historia</a>
+                    <a href="#">Misión, visión y Valores</a>
+                    <a href="#">Carreras</a>
+                    <a href="#">Política de Privacidad</a>
+                    <a href="#">Términos del Servicio</a>
+                    <a href="#">Tortas</a>
+                </nav>
+            </div>
+            <div>
+                <h3>Soporte</h3>
+                <nav class="footer-menu">
+                    <a href="#">Preguntas Frecuentes</a>
+                    <a href="#">Ayuda </a>
+                    <a href="#">Confianza & Seguridad</a>
                 </nav>
             </div>
         </div>
-    </div>
-
-    <div class="hero"></div>
-    <main class="container-xl py-5">
-        <h2 class="text-center my-5">Galería - Fotos</h2>
-        <ul class="row list-unstyled galeria">
-            <li class="col-md-6 col-lg-4">
-                <a data-bs-toggle="modal" data-bs-target="#modal-imagen-1">
-                    <img class="img-fluid" src="img/galeria_01.jpg" alt="Imagen Galeria">
-                </a>
-            </li>
-            <li class="col-md-6 col-lg-4">
-                <img class="img-fluid" src="img/galeria_02.jpg" alt="Imagen Galeria" />
-            </li>
-            <li class="col-md-6 col-lg-4">
-                <img class="img-fluid" src="img/galeria_03.jpg" alt="Imagen Galeria" />
-            </li>
-            <li class="col-md-6 col-lg-4">
-                <img class="img-fluid" src="img/galeria_04.jpg" alt="Imagen Galeria" />
-            </li>
-            <li class="col-md-6 col-lg-4">
-                <img class="img-fluid" src="img/galeria_05.jpg" alt="Imagen Galeria" />
-            </li>
-            <li class="col-md-6 col-lg-4">
-                <img class="img-fluid" src="img/Galeria_06.jpg" alt="Imagen Galeria" />
-            </li>
-            <li class="col-md-6 col-lg-4">
-                <img class="img-fluid" src="img/galeria_07.jpg" alt="Imagen Galeria" />
-            </li>
-            <li class="col-md-6 col-lg-4">
-                <img class="img-fluid" src="img/galeria_08.jpg" alt="Imagen Galeria" />
-            </li>
-            <li class="col-md-6 col-lg-4">
-                <img class="img-fluid" src="img/galeria_09.jpg" alt="Imagen Galeria" />
-            </li>
-        </ul>
-    </main>
-
-    <div class="modal fade" id="modal-imagen-1">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <img class="img-fluid" src="img/Empanadas.jpeg" alt="Imagen Galeria">
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <footer class="pt-5 mt-5 border-top">
-        <div class="container-xl mt-5">
-            <div class="row">
-                <div class="col-md-4 mb-4 mb-md-0 text-center">
-                    <h3 class="mb-4">Categorías</h3>
-                    <nav class="d-flex flex-column">
-                        <a href="#">Panes</a>
-                        <a href="#">Hojaldres</a>
-                        <a href="#">Tradicionales</a>
-                        <a href="#">Quesos</a>
-                        <a href="#">Galletas</a>
-                        <a href="#">Tortas</a>
-                    </nav>
-                </div>
-
-                <div class="col-md-4 mb-4 mb-md-0 text-center">
-                    <h3 class="mb-4">Sobre Nosotros</h3>
-                    <nav class="d-flex flex-column">
-                        <a href="#">Nuestra Historia</a>
-                        <a href="#">Misión, Visión y Valores</a>
-                        <a href="#">Carreras</a>
-                        <a href="#">Política de Privacidad</a>
-                        <a href="#">Términos & Servicio</a>
-                    </nav>
-                </div>
-
-                <div class="col-md-4 mb-4 mb-md-0 text-center">
-                    <h3 class="mb-4">Soporte</h3>
-                    <nav class="d-flex flex-column">
-                        <a href="#">Preguntas Frecuentes</a>
-                        <a href="#">Ayuda</a>
-                        <a href="#">Confianza y Seguridad</a>
-                    </nav>
-                </div>
-            </div>
-            <p class="mt-5 text-center fs-2">Todos los derechos reservados - Paula Quintero</p>
-        </div>
+        <p class="copyright">Todos los derechos reservados - Paula Quintero</p>
     </footer>
-
 </body>
 </html>

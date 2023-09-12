@@ -8,97 +8,77 @@
 @use 'formulario';
 @use 'footer';
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap");
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
 html {
 	box-sizing: border-box;
+  font-size: 62.5%;
 }
 body {
 	font-family: "Montserrat", sans-serif;
-	font-size: 1.6rem; /* 16px */
+	font-size: 1.6rem;
 	line-height: 2;
 }
-
-/* Globales */
-h1,
-h2,
-h3 {
-  font-family: "Playfair Display", serif;
-  margin: 0 0 2rem 0;
-}
 h1 {
-  font-size:  3.8rem;
+	font-family: "Playfair Display", serif;
+	margin: 0 0 2rem 0;
+	font-size: 3.8rem;
 }
-@media (min-width: 768px) { 
-  h1 {
-    font-size: 5 rem;
-  }
-}
-
 h2 {
-  font-size: 3.2rem;
+	font-family: "Playfair Display", serif;
+	margin: 0 0 2rem 0;
+	font-size: 3.2rem;
 }
-@media (min-width: 768px) { 
-  h2 {
-    font-size: 4 rem;
-  }
-}
-
 h3 {
-  font-size: 2.4rem;
+	font-family: "Playfair Display", serif;
+	margin: 0 0 2rem 0;
+	font-size: 2.4rem;
 }
-@media (min-width: 768px) { 
-  h3 {
-    font-size: 3rem;
-  }
-}
-  
-
 a {
-  text-decoration: none;
-  color: #795548;
+	text-decoration: none;
+	color: #795548;
 }
 .contenedor {
-  max-width: 120rem;
-  margin: 0 auto;
+	max-width: 120rem;
+	margin: 0 auto;
 }
-
-
 .btn {
-  background-color: #cb7c2d ;
-  display: block;
-  color: #fff;
-  text-transform: uppercase;
-  font-weight: 900;
-  font-size: 1.8rem;
-  padding: 1rem;
-  transition: background-color .3s ease-out;
-  text-align: center;
-  border-radius: 2rem;
-  width:100%; 
-  border: none;
+	background-color: #cb7c2d;
+	display: block;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 900;
+	font-size: 1.8rem;
+	padding: 1rem;
+	transition: background-color .3s ease-out;
+	text-align: center;
+	border-radius: 2rem;
+	width: 100%;
+	border: none;
+	&:hover {
+		background-color: #dea450;
+		cursor: pointer;
+	}
 }
-
-.btn:hover {
-    background-color: #dea450;
-    cursor: pointer;
-}
-
 img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: block;
 }
-/* Utilidades*/
-.text-center{
-  text-align: center;
-  color: #795548;
+.text-center {
+	text-align: center;
+	color: #795548;
+	span {
+		color: #c48426;
+	}
 }
-
-.text-center span {
-  color: #c48426;   
+@media (min-width: 768px) {
+	h1 {
+		font-size: 5 rem;
+	}
+	h2 {
+		font-size: 4 rem;
+	}
+	h3 {
+		font-size: 3rem;
+	}
 }
