@@ -5,19 +5,14 @@
 .nombre-sitio {
   margin-top: 5rem;
   text-align: center;
+  color: #795548;
+}
+.nombre-sitio span {
+  color: #c48426;
 }
 
 .sitio-color {
   color: #795548;
-}
-
-h1 {
-  font-size: 40px;
-  color: #795548;
-}
-
-.nombre-sitio span {
-  color: #c48426;
 }
 
 .contenedor-navegacion {
@@ -30,7 +25,6 @@ h1 {
   flex-direction: column;
   align-items: center;
 }
-
 .nav-principal li {
   list-style: none;
 }
@@ -65,21 +59,20 @@ h1 {
 .categorias span {
   color: #c48426;
 }
-
-.categoria {
+.categorias .categoria {
   margin-bottom: 2rem;
   text-align: center;
 }
-.categoria img {
+.categorias .categoria img {
   width: 100%;
 }
-.categoria a {
+.categorias .categoria a {
   text-align: center;
   display: block;
   padding: 2rem;
   font-size: 2rem;
 }
-.categoria a:hover {
+.categorias .categoria a:hover {
   background-color: #c48426;
   color: #fff;
   border-bottom-right-radius: 1rem;
@@ -320,18 +313,22 @@ h1 {
   padding: 0;
   margin: 0;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   gap: 2rem;
+}
+.galeria li {
+  margin: 0 auto;
 }
 
 @media (min-width: 768px) {
   .galeria {
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
 }
 .galeria img {
-  width: 40rem;
-  height: 40rem;
+  max-width: 30rem;
+  height: auto;
   object-fit: cover;
 }
 
@@ -387,10 +384,6 @@ h1 {
 .site-footer h3 {
   margin-bottom: 0.5rem;
   text-align: center;
-}
-
-.grid-footer > div {
-  margin-bottom: 2rem;
 }
 
 .footer-menu a {

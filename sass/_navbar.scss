@@ -3,21 +3,16 @@
 .nombre-sitio {
 	margin-top: 5rem;
 	text-align: center;
-	
+	color: #795548;
+	& span {
+		color: #c48426;
+	}
 }
 
 .sitio-color {
 	color:#795548;
 }
 
-h1 {
-	font-size: 40px;
-	color: #795548;
-}
-
-.nombre-sitio span {
-	color: #c48426;
-}
 .contenedor-navegacion {
 	border-top: 0.1rem solid #c48426;
 }
@@ -27,15 +22,14 @@ h1 {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-}
 
-.nav-principal li	{
-	list-style: none;
+	& li {
+		list-style: none;
 
-	&:hover	{
-		transform: scale(1.2);
+		&:hover	{
+			transform: scale(1.2);
+		}
 	}
-	
 }
 
 @media (min-width: 768px) { 
@@ -44,8 +38,6 @@ h1 {
 			flex-direction: row;
 	}
 }
-
-
 
 .hero {
 	background-image: url(../img/Hero.jpg);

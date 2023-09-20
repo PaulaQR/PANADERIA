@@ -5,25 +5,26 @@
 	span {
 		color: #c48426;
 	}
-}
-.categoria {
-	margin-bottom: 2rem;
-	text-align: center;
-	img {
-		width: 100%;
-	}
-	a {
+	.categoria {
+		margin-bottom: 2rem;
 		text-align: center;
-		display: block;
-		padding: 2rem;
-		font-size: 2rem;
-		&:hover {
-			background-color: #c48426;
-			color: #fff;
-			border-bottom-right-radius: 1rem;
+		img {
+			width: 100%;
+		}
+		a {
+			text-align: center;
+			display: block;
+			padding: 2rem;
+			font-size: 2rem;
+			&:hover {
+				background-color: #c48426;
+				color: #fff;
+				border-bottom-right-radius: 1rem;
+			}
 		}
 	}
 }
+
 @media (min-width: 768px) {
 	.categoria {
 		margin-bottom: 0;

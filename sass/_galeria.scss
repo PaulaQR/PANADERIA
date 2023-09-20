@@ -1,20 +1,24 @@
-
 /* Galeria */
 .galeria {
-	list-style: none;
-	padding: 0;
-	margin: 0;
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	gap: 2rem;
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		gap: 2rem;
+
+		& li{
+			margin: 0 auto;
+		}
 }
 @media	(min-width: 768px) {
 	.galeria {
+		display: grid;
 		grid-template-columns: repeat(3, 1fr);
 	}
 }
 .galeria img {
-		width: 40rem;
-		height: 40rem;
+		max-width: 30rem;
+		height: auto;
 		object-fit: cover;
 }
