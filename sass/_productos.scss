@@ -5,9 +5,11 @@
 .producto {
 	background-color: #795548;
 	margin: 2rem;
+	border-radius: 2rem;
 	&:last-of-type {
 		margin-bottom: 0;
 	}
+	
 }
 .texto-producto {
 	text-align: center;
