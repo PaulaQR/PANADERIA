@@ -471,7 +471,7 @@ a {
   transition: background-color 0.3s ease-out;
   text-align: center;
   border-radius: 2rem;
-  width: 100%;
+  width: 98%;
   border: none;
 }
 .btn:hover {
