@@ -4,7 +4,7 @@
 }
 .producto {
 	background-color: #795548;
-	margin-bottom: 2rem;
+	margin: 2rem;
 	&:last-of-type {
 		margin-bottom: 0;
 	}
@@ -102,8 +102,7 @@
 	}
 }
 
-.producto-extra{
-	display: flex;
+.producto-extra{	
 	padding-top: 2rem;
-	gap: 2rem;
 }
+
