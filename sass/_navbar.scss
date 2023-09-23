@@ -1,16 +1,18 @@
+@use 'variables' as *;
+
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap");
 /* Header y Navegación */
 .nombre-sitio {
 	margin-top: 5rem;
 	text-align: center;
-	color: #795548;
+	color: $base-color;
 	& span {
 		color: #c48426;
 	}
 }
 
 .sitio-color {
-	color:#795548;
+	color: $base-color;
 }
 
 .contenedor-navegacion {

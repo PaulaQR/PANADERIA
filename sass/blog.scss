@@ -13,22 +13,25 @@
 	border-bottom: 2px solid #c48426;
 	margin-bottom: 2rem;
 	padding-bottom: 4rem;
+	&-meta {
+		p {
+			font-weight: bold;
+		}
+		span {
+			color: #e09f74;
+		}
+	}
 }
+
 .masas {
 	margin: 2rem;
 }
-.entrada-meta {
-	p {
-		font-weight: bold;
-	}
-	span {
-		color: #e09f74;
-	}
-}
+
 .contenido-entrada-blog {
 	width: 60rem;
 	margin: 0 auto;
 }
+
 @media (max-width: 767px) {
 	.entrada {
 		h2 {

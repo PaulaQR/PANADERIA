@@ -1,7 +1,9 @@
+@use 'variables' as *;
+
 /* Categorias */
 .categorias {
 	padding: 5rem 0;
-	color: #795548;
+	color: $base-color;
 	span {
 		color: #c48426;
 	}

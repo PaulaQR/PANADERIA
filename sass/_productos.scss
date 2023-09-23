@@ -1,9 +1,11 @@
+@use 'variables' as *;
+
 /* Listado de Productos */
 .contenido-principal {
 	padding-top: 5rem;
 }
 .producto {
-	background-color: #795548;
+	background-color: $base-color;
 	margin: 2rem;
 	border-radius: 2rem;
 	&:last-of-type {

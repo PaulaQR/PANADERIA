@@ -5,8 +5,11 @@
 	fieldset {
 		border: 2px solid #c48426;
 		margin-bottom: 2rem;
+		padding: 2rem;
 	}
 	legend {
+		box-sizing: border-box;
+		border-radius: 1rem;
 		background-color: #a8491d;
 		width: 100%;
 		text-align: center;
@@ -15,6 +18,13 @@
 		font-weight: 900;
 		padding: 1rem;
 		margin-bottom: 4rem;
+	}
+	.contenedor-input {
+		width: 100%;
+		display: flex;
+		.btn {
+			flex-grow: 1;
+		}
 	}
 }
 .campo {

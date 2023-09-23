@@ -14,16 +14,15 @@
   margin-bottom: 2rem;
   padding-bottom: 4rem;
 }
-
-.masas {
-  margin: 2rem;
-}
-
 .entrada-meta p {
   font-weight: bold;
 }
 .entrada-meta span {
   color: #e09f74;
+}
+
+.masas {
+  margin: 2rem;
 }
 
 .contenido-entrada-blog {
