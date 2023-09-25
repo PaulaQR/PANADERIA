@@ -7,7 +7,7 @@
 	text-align: center;
 	color: $base-color;
 	& span {
-		color: #c48426;
+		color: $primary-color;
 	}
 }
 
@@ -16,7 +16,7 @@
 }
 
 .contenedor-navegacion {
-	border-top: 0.1rem solid #c48426;
+	border-top: 0.1rem solid $primary-color;
 }
 
 .nav-principal {

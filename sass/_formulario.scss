@@ -1,16 +1,16 @@
-/* Formulario */
+@use 'variables' as *;
 .formulario {
 	max-width: 60rem;
 	margin: 0 auto;
 	fieldset {
-		border: 2px solid #c48426;
+		border: 2px solid $primary-color;
 		margin-bottom: 2rem;
 		padding: 2rem;
 	}
 	legend {
 		box-sizing: border-box;
 		border-radius: 1rem;
-		background-color: #a8491d;
+		background-color: $base-color;
 		width: 100%;
 		text-align: center;
 		color: #fff;

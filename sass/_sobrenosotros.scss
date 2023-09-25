@@ -1,4 +1,4 @@
-/* Sobre Nosotros */
+@use 'variables' as *;
 .sobre-nosotros {
 	margin: 10rem 0;
 	background-image: linear-gradient( to bottom, transparent 50%, #795548 50%, #795548 100% ), url(../img/nosotros.jpg);
@@ -13,7 +13,7 @@
 
 .texto-nosotros {
 	grid-row: 2 / 3;
-	color: #fff;
+	color: $white;
 	padding: 1rem;
 }
 @media (min-width: 768px) {

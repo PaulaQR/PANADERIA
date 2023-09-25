@@ -1,7 +1,9 @@
+@use 'variables' as *;
+
 @mixin button-mixin ($background-color) {
     background-color: $background-color;
 	display: block;
-	color: #fff;
+	color: white;
 	text-transform: uppercase;
 	font-weight: 900;
 	font-size: 1.8rem;

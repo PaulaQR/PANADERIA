@@ -1,4 +1,5 @@
-/* Blog */
+@use 'variables' as *;
+
 @media (min-width: 768px) {
 	.contenedor-blog {
 		grid-template-columns: repeat(2, 1fr);
@@ -18,7 +19,7 @@
 			font-weight: bold;
 		}
 		span {
-			color: #e09f74;
+			color: $primary-color;
 		}
 	}
 }

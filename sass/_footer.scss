@@ -1,6 +1,6 @@
-/* Footer */
+@use 'variables' as *;
 .site-footer {
-	border-top: 1px solid #c48426;
+	border-top: 1px solid $primary-color;
 	margin-top: 5rem;
 	padding: 5rem;
 	h3 {
@@ -18,7 +18,7 @@
 .copyright {
 	margin-top: 5rem;
 	text-align: center;
-	color: #c48426;
+	color: $primary-color;
 }
 @media (min-width: 768px) {
 	.site-footer {

@@ -5,7 +5,7 @@
 	padding: 5rem 0;
 	color: $base-color;
 	span {
-		color: #c48426;
+		color: $primary-color;
 	}
 	.categoria {
 		margin-bottom: 2rem;
@@ -19,8 +19,8 @@
 			padding: 2rem;
 			font-size: 2rem;
 			&:hover {
-				background-color: #c48426;
-				color: #fff;
+				background-color: $primary-color;
+				color: $white;
 				border-bottom-right-radius: 1rem;
 			}
 		}
