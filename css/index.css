@@ -8,7 +8,7 @@
   color: #795548;
 }
 .nombre-sitio span {
-  color: #c48426;
+  color: #cb7c2d;
 }
 
 .sitio-color {
@@ -16,7 +16,7 @@
 }
 
 .contenedor-navegacion {
-  border-top: 0.1rem solid #c48426;
+  border-top: 0.1rem solid #cb7c2d;
 }
 
 .nav-principal {
@@ -51,13 +51,12 @@
     height: 55rem;
   }
 }
-/* Categorias */
 .categorias {
   padding: 5rem 0;
   color: #795548;
 }
 .categorias span {
-  color: #c48426;
+  color: #cb7c2d;
 }
 .categorias .categoria {
   margin-bottom: 2rem;
@@ -73,7 +72,7 @@
   font-size: 2rem;
 }
 .categorias .categoria a:hover {
-  background-color: #c48426;
+  background-color: #cb7c2d;
   color: #fff;
   border-bottom-right-radius: 1rem;
 }
@@ -88,7 +87,6 @@
     gap: 5rem;
   }
 }
-/* Sobre Nosotros */
 .sobre-nosotros {
   margin: 10rem 0;
   background-image: linear-gradient(to bottom, transparent 50%, #795548 50%, #795548 100%), url(../img/nosotros.jpg);
@@ -125,7 +123,6 @@
     grid-column: 2/3;
   }
 }
-/* Nosotros */
 .contenido-nosotros {
   display: grid;
   grid-template-columns: repeat(1, 2fr);
@@ -151,7 +148,6 @@
     padding: 0;
   }
 }
-/* Listado de Productos */
 .contenido-principal {
   padding-top: 5rem;
 }
@@ -262,7 +258,6 @@
   padding-top: 2rem;
 }
 
-/* Blog */
 @media (min-width: 768px) {
   .contenedor-blog {
     grid-template-columns: repeat(2, 1fr);
@@ -282,7 +277,7 @@
   font-weight: bold;
 }
 .entrada-meta span {
-  color: #e09f74;
+  color: #cb7c2d;
 }
 
 .masas {
@@ -305,7 +300,6 @@
     padding: 2rem;
   }
 }
-/* Galeria */
 .galeria {
   list-style: none;
   padding: 0;
@@ -330,20 +324,19 @@
   object-fit: cover;
 }
 
-/* Formulario */
 .formulario {
   max-width: 60rem;
   margin: 0 auto;
 }
 .formulario fieldset {
-  border: 2px solid #c48426;
+  border: 2px solid #cb7c2d;
   margin-bottom: 2rem;
   padding: 2rem;
 }
 .formulario legend {
   box-sizing: border-box;
   border-radius: 1rem;
-  background-color: #a8491d;
+  background-color: #795548;
   width: 100%;
   text-align: center;
   color: #fff;
@@ -383,9 +376,8 @@
   padding: 1rem;
 }
 
-/* Footer */
 .site-footer {
-  border-top: 1px solid #c48426;
+  border-top: 1px solid #cb7c2d;
   margin-top: 5rem;
   padding: 5rem;
 }
@@ -402,7 +394,7 @@
 .copyright {
   margin-top: 5rem;
   text-align: center;
-  color: #c48426;
+  color: #cb7c2d;
 }
 
 @media (min-width: 768px) {
@@ -464,7 +456,7 @@ a {
 .btn {
   background-color: #cb7c2d;
   display: block;
-  color: #fff;
+  color: white;
   text-transform: uppercase;
   font-weight: 900;
   font-size: 1.8rem;
@@ -491,7 +483,7 @@ img {
   color: #795548;
 }
 .text-center span {
-  color: #c48426;
+  color: #cb7c2d;
 }
 
 @media (min-width: 768px) {
